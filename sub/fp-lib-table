@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name bnc-tht)(type KiCad)(uri ${KIPRJMOD}/bnc-tht.pretty)(options "")(descr ""))
+  (lib (name js202011scqn)(type KiCad)(uri ${KIPRJMOD}/js202011scqn.pretty)(options "")(descr ""))
+)

@@ -1,0 +1,370 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:DB15_Female_HighDensity_MountingHoles J5
+U 1 1 633308CD
+P 5050 3450
+F 0 "J5" H 5050 4317 50  0000 C CNN
+F 1 "DB15_Female_HighDensity_MountingHoles" H 5050 4226 50  0000 C CNN
+F 2 "hd15-vga:HD15-VGA" H 4100 3850 50  0001 C CNN
+F 3 " ~" H 4100 3850 50  0001 C CNN
+	1    5050 3450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4750 3550
+NoConn ~ 4750 3650
+NoConn ~ 5350 3050
+NoConn ~ 5350 3250
+NoConn ~ 5350 3850
+Text HLabel 3650 3050 0    50   Output ~ 0
+RED
+Text HLabel 3650 3250 0    50   Output ~ 0
+GREEN
+Text HLabel 3650 3450 0    50   Output ~ 0
+BLUE
+Text HLabel 4650 2950 0    50   Input ~ 0
+GND
+Text HLabel 4650 3150 0    50   Input ~ 0
+GND
+Text HLabel 4650 3350 0    50   Input ~ 0
+GND
+Text HLabel 4650 3750 0    50   Input ~ 0
+GND
+Text HLabel 4650 3850 0    50   Input ~ 0
+GND
+Text HLabel 5050 4350 3    50   Input ~ 0
+GND
+Text Label 5450 3450 0    50   ~ 0
+H_SYNC
+Text Label 5450 3650 0    50   ~ 0
+V_SYNC
+Wire Wire Line
+	4650 3750 4750 3750
+Wire Wire Line
+	4750 3850 4650 3850
+Wire Wire Line
+	4650 3350 4750 3350
+Wire Wire Line
+	4750 3150 4650 3150
+Wire Wire Line
+	4650 2950 4750 2950
+Wire Wire Line
+	5050 4150 5050 4250
+$Comp
+L Device:R_US R24
+U 1 1 6333395F
+P 4350 4000
+F 0 "R24" H 4418 4046 50  0000 L CNN
+F 1 "75R" H 4418 3955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4390 3990 50  0001 C CNN
+F 3 "~" H 4350 4000 50  0001 C CNN
+	1    4350 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R23
+U 1 1 63334980
+P 4050 4000
+F 0 "R23" H 4118 4046 50  0000 L CNN
+F 1 "75R" H 4118 3955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4090 3990 50  0001 C CNN
+F 3 "~" H 4050 4000 50  0001 C CNN
+	1    4050 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R22
+U 1 1 6333531B
+P 3750 4000
+F 0 "R22" H 3818 4046 50  0000 L CNN
+F 1 "75R" H 3818 3955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3790 3990 50  0001 C CNN
+F 3 "~" H 3750 4000 50  0001 C CNN
+	1    3750 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3450 4350 3450
+Wire Wire Line
+	4350 3850 4350 3450
+Connection ~ 4350 3450
+Wire Wire Line
+	4350 3450 4750 3450
+Wire Wire Line
+	4750 3250 4050 3250
+Wire Wire Line
+	4050 3850 4050 3250
+Connection ~ 4050 3250
+Wire Wire Line
+	4050 3250 3650 3250
+Wire Wire Line
+	4750 3050 3750 3050
+Wire Wire Line
+	3750 3850 3750 3050
+Connection ~ 3750 3050
+Wire Wire Line
+	3750 3050 3650 3050
+Wire Wire Line
+	5050 4250 4350 4250
+Wire Wire Line
+	4350 4250 4350 4150
+Connection ~ 5050 4250
+Wire Wire Line
+	5050 4250 5050 4350
+Wire Wire Line
+	4350 4250 4050 4250
+Wire Wire Line
+	4050 4250 4050 4150
+Connection ~ 4350 4250
+Wire Wire Line
+	4050 4250 3750 4250
+Wire Wire Line
+	3750 4250 3750 4150
+Connection ~ 4050 4250
+$Comp
+L pbsw:PBSW_4PDT SW1
+U 1 1 6334FC18
+P 6250 3650
+F 0 "SW1" V 5303 3650 60  0000 C CNN
+F 1 "PBSW_4PDT" V 5409 3650 60  0000 C CNN
+F 2 "pbh:PBH4U" H 6050 3650 60  0001 C CNN
+F 3 "" H 6050 3650 60  0001 C CNN
+	1    6250 3650
+	0    -1   -1   0   
+$EndComp
+Text Label 6600 3950 0    50   ~ 0
+CSYNC_ACT
+Text Label 6600 3750 0    50   ~ 0
+HV_SYNC_ACT
+Text Label 6600 3350 0    50   ~ 0
+COMB_H_SYNC
+Text Label 6600 2900 0    50   ~ 0
+COMB_V_SYNC
+$Comp
+L Device:R_US R16
+U 1 1 6335EA94
+P 6850 3150
+F 0 "R16" V 7055 3150 50  0000 C CNN
+F 1 "10K" V 6964 3150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6890 3140 50  0001 C CNN
+F 3 "~" H 6850 3150 50  0001 C CNN
+	1    6850 3150
+	0    -1   -1   0   
+$EndComp
+Text HLabel 7100 3150 2    50   Input ~ 0
+GND
+Text HLabel 6700 4350 2    50   Input ~ 0
+GND
+Text HLabel 5800 3850 0    50   Input ~ 0
+GND
+Wire Wire Line
+	7100 3150 7000 3150
+Wire Wire Line
+	6700 3150 6600 3150
+Wire Wire Line
+	5900 3850 5800 3850
+Wire Wire Line
+	6600 4350 6700 4350
+$Comp
+L Device:LED D1
+U 1 1 6336BB77
+P 7650 3750
+F 0 "D1" H 7643 3966 50  0000 C CNN
+F 1 "GREEN_LED" H 7643 3875 50  0000 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7650 3750 50  0001 C CNN
+F 3 "~" H 7650 3750 50  0001 C CNN
+	1    7650 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 6336D278
+P 7650 3950
+F 0 "D2" H 7643 4166 50  0000 C CNN
+F 1 "RED_LED" H 7643 4075 50  0000 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7650 3950 50  0001 C CNN
+F 3 "~" H 7650 3950 50  0001 C CNN
+	1    7650 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R21
+U 1 1 6336EE8F
+P 7250 3950
+F 0 "R21" V 7045 3950 50  0000 C CNN
+F 1 "1K" V 7136 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7290 3940 50  0001 C CNN
+F 3 "~" H 7250 3950 50  0001 C CNN
+	1    7250 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R19
+U 1 1 6336F50B
+P 7250 3750
+F 0 "R19" V 7045 3750 50  0000 C CNN
+F 1 "1K" V 7136 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7290 3740 50  0001 C CNN
+F 3 "~" H 7250 3750 50  0001 C CNN
+	1    7250 3750
+	0    1    1    0   
+$EndComp
+Text HLabel 7900 3650 1    50   Input ~ 0
+VCC
+Wire Wire Line
+	7500 3950 7400 3950
+Wire Wire Line
+	7400 3750 7500 3750
+Wire Wire Line
+	7900 3650 7900 3750
+Wire Wire Line
+	7900 3750 7800 3750
+Wire Wire Line
+	7900 3750 7900 3950
+Wire Wire Line
+	7900 3950 7800 3950
+Connection ~ 7900 3750
+$Comp
+L Transistor_BJT:MMBT3904 Q1
+U 1 1 63372F54
+P 8450 3350
+F 0 "Q1" H 8641 3396 50  0000 L CNN
+F 1 "MMBT3904" H 8641 3305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 8650 3275 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 8450 3350 50  0001 L CNN
+	1    8450 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R20
+U 1 1 63374CB6
+P 8550 3900
+F 0 "R20" H 8618 3946 50  0000 L CNN
+F 1 "1K" H 8618 3855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8590 3890 50  0001 C CNN
+F 3 "~" H 8550 3900 50  0001 C CNN
+	1    8550 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R18
+U 1 1 63375A31
+P 8800 3650
+F 0 "R18" V 8595 3650 50  0000 C CNN
+F 1 "470R" V 8686 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8840 3640 50  0001 C CNN
+F 3 "~" H 8800 3650 50  0001 C CNN
+	1    8800 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8550 3550 8550 3650
+Wire Wire Line
+	8650 3650 8550 3650
+Connection ~ 8550 3650
+Wire Wire Line
+	8550 3650 8550 3750
+Text Label 5900 4250 2    50   ~ 0
+COMB_CSYNC
+Text HLabel 8550 4250 3    50   Input ~ 0
+GND
+$Comp
+L Device:R_US R17
+U 1 1 63377B0F
+P 8000 3350
+F 0 "R17" V 7795 3350 50  0000 C CNN
+F 1 "10K" V 7886 3350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8040 3340 50  0001 C CNN
+F 3 "~" H 8000 3350 50  0001 C CNN
+	1    8000 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R15
+U 1 1 633789DA
+P 8000 2900
+F 0 "R15" V 7795 2900 50  0000 C CNN
+F 1 "100R" V 7886 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8040 2890 50  0001 C CNN
+F 3 "~" H 8000 2900 50  0001 C CNN
+	1    8000 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8150 3350 8250 3350
+Wire Wire Line
+	8150 2900 8550 2900
+Wire Wire Line
+	8550 2900 8550 3150
+Wire Wire Line
+	6600 2900 7850 2900
+Wire Wire Line
+	6600 3350 7850 3350
+Wire Wire Line
+	6600 3950 7100 3950
+Wire Wire Line
+	7100 3750 6600 3750
+Wire Wire Line
+	8950 3650 9050 3650
+Wire Wire Line
+	9050 3650 9050 4700
+Wire Wire Line
+	9050 4700 5800 4700
+Wire Wire Line
+	5800 4700 5800 4250
+Wire Wire Line
+	5800 4250 5900 4250
+Wire Wire Line
+	5800 3650 5800 3050
+Wire Wire Line
+	5350 3650 5800 3650
+Wire Wire Line
+	6600 3550 8050 3550
+Wire Wire Line
+	8050 3550 8050 4150
+Wire Wire Line
+	8050 4150 6600 4150
+Wire Wire Line
+	8050 3550 8150 3550
+Connection ~ 8050 3550
+Text HLabel 8150 3550 2    50   Output ~ 0
+CSYNC
+Wire Wire Line
+	8550 4050 8550 4150
+Wire Wire Line
+	8450 4150 8550 4150
+Connection ~ 8550 4150
+Wire Wire Line
+	8550 4150 8550 4250
+Wire Wire Line
+	8150 4150 8050 4150
+Connection ~ 8050 4150
+$Comp
+L Device:R_US R25
+U 1 1 633D47CB
+P 8300 4150
+F 0 "R25" V 8095 4150 50  0000 C CNN
+F 1 "75R" V 8186 4150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8340 4140 50  0001 C CNN
+F 3 "~" H 8300 4150 50  0001 C CNN
+	1    8300 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5800 3050 5900 3050
+Wire Wire Line
+	5350 3450 5900 3450
+$EndSCHEMATC

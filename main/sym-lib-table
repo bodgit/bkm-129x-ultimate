@@ -1,0 +1,13 @@
+(sym_lib_table
+  (lib (name pbsw)(type Legacy)(uri ${KIPRJMOD}/pbsw.lib)(options "")(descr ""))
+  (lib (name ts5a3359)(type Legacy)(uri ${KIPRJMOD}/ts5a3359.lib)(options "")(descr ""))
+  (lib (name ths7374)(type Legacy)(uri ${KIPRJMOD}/ths7374.lib)(options "")(descr ""))
+  (lib (name adg1611)(type Legacy)(uri ${KIPRJMOD}/adg1611.lib)(options "")(descr ""))
+  (lib (name dtc144eka)(type Legacy)(uri ${KIPRJMOD}/dtc144eka.lib)(options "")(descr ""))
+  (lib (name arduino-nano-v3)(type Legacy)(uri ${KIPRJMOD}/arduino-nano-v3.lib)(options "")(descr ""))
+  (lib (name mic3490)(type Legacy)(uri ${KIPRJMOD}/mic3490.lib)(options "")(descr ""))
+  (lib (name ld1117s50tr)(type Legacy)(uri ${KIPRJMOD}/ld1117s50tr.lib)(options "")(descr ""))
+  (lib (name atmega)(type Legacy)(uri ${KIPRJMOD}/atmega.lib)(options "")(descr ""))
+  (lib (name isl59885)(type Legacy)(uri ${KIPRJMOD}/isl59885.lib)(options "")(descr ""))
+  (lib (name isl4089)(type Legacy)(uri ${KIPRJMOD}/isl4089.lib)(options "")(descr ""))
+)

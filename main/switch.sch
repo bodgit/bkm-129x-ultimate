@@ -1,0 +1,556 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 6650 3250 3    50   Input ~ 0
+GND
+$Comp
+L ts5a3359:TS5A3359DCUR U14
+U 2 1 634B8F17
+P 6650 2650
+F 0 "U14" H 6780 2696 50  0000 L CNN
+F 1 "TS5A3359DCUR" H 6780 2605 50  0000 L CNN
+F 2 "Package_SO:VSSOP-8_2.3x2mm_P0.5mm" H 6650 1950 50  0001 C CNN
+F 3 "" H 6075 2875 50  0001 C CNN
+	2    6650 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 5250 5400 5250
+Text HLabel 3800 5400 0    50   Input ~ 0
+CSYNC_3
+Text HLabel 3800 5250 0    50   Input ~ 0
+CSYNC_2
+Text HLabel 3800 5100 0    50   Input ~ 0
+CSYNC_1
+$Comp
+L ts5a3359:TS5A3359DCUR U16
+U 1 1 634B7BCF
+P 5000 5250
+F 0 "U16" H 5000 5717 50  0000 C CNN
+F 1 "TS5A3359DCUR" H 5000 5626 50  0000 C CNN
+F 2 "Package_SO:VSSOP-8_2.3x2mm_P0.5mm" H 5000 4550 50  0001 C CNN
+F 3 "" H 4425 5475 50  0001 C CNN
+	1    5000 5250
+	-1   0    0    -1  
+$EndComp
+Text HLabel 5500 5250 2    50   Output ~ 0
+CSYNC
+Wire Wire Line
+	5500 4100 5400 4100
+Text HLabel 3800 4250 0    50   Input ~ 0
+BLUE_3
+Text HLabel 3800 4100 0    50   Input ~ 0
+BLUE_2
+Text HLabel 3800 3950 0    50   Input ~ 0
+BLUE_1
+$Comp
+L ts5a3359:TS5A3359DCUR U15
+U 1 1 634B6F1F
+P 5000 4100
+F 0 "U15" H 5000 4567 50  0000 C CNN
+F 1 "TS5A3359DCUR" H 5000 4476 50  0000 C CNN
+F 2 "Package_SO:VSSOP-8_2.3x2mm_P0.5mm" H 5000 3400 50  0001 C CNN
+F 3 "" H 4425 4325 50  0001 C CNN
+	1    5000 4100
+	-1   0    0    -1  
+$EndComp
+Text HLabel 5500 4100 2    50   Output ~ 0
+BLUE
+Wire Wire Line
+	5500 1800 5400 1800
+Wire Wire Line
+	4100 1950 4600 1950
+Wire Wire Line
+	4600 1800 4300 1800
+Wire Wire Line
+	4500 1650 4600 1650
+Text HLabel 3800 1950 0    50   Input ~ 0
+RED_3
+Text HLabel 3800 1800 0    50   Input ~ 0
+RED_2
+Text HLabel 3800 1650 0    50   Input ~ 0
+RED_1
+$Comp
+L ts5a3359:TS5A3359DCUR U13
+U 1 1 634B2F57
+P 5000 1800
+F 0 "U13" H 5000 2267 50  0000 C CNN
+F 1 "TS5A3359DCUR" H 5000 2176 50  0000 C CNN
+F 2 "Package_SO:VSSOP-8_2.3x2mm_P0.5mm" H 5000 1100 50  0001 C CNN
+F 3 "" H 4425 2025 50  0001 C CNN
+	1    5000 1800
+	-1   0    0    -1  
+$EndComp
+Text HLabel 5500 1800 2    50   Output ~ 0
+RED
+Wire Wire Line
+	5400 2950 5500 2950
+$Comp
+L ts5a3359:TS5A3359DCUR U14
+U 1 1 634B6440
+P 5000 2950
+F 0 "U14" H 5000 3417 50  0000 C CNN
+F 1 "TS5A3359DCUR" H 5000 3326 50  0000 C CNN
+F 2 "Package_SO:VSSOP-8_2.3x2mm_P0.5mm" H 5000 2250 50  0001 C CNN
+F 3 "" H 4425 3175 50  0001 C CNN
+	1    5000 2950
+	-1   0    0    -1  
+$EndComp
+Text HLabel 5500 2950 2    50   Output ~ 0
+GREEN
+$Comp
+L Device:R_US R42
+U 1 1 634D91B9
+P 2850 6100
+F 0 "R42" H 2918 6146 50  0000 L CNN
+F 1 "10K" H 2918 6055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2890 6090 50  0001 C CNN
+F 3 "~" H 2850 6100 50  0001 C CNN
+	1    2850 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R43
+U 1 1 634DA018
+P 3150 6100
+F 0 "R43" H 3218 6146 50  0000 L CNN
+F 1 "10K" H 3218 6055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3190 6090 50  0001 C CNN
+F 3 "~" H 3150 6100 50  0001 C CNN
+	1    3150 6100
+	1    0    0    -1  
+$EndComp
+Text HLabel 2750 5850 0    50   Input ~ 0
+IN1
+Text HLabel 2750 5750 0    50   Input ~ 0
+IN2
+Wire Wire Line
+	2750 5850 2850 5850
+Wire Wire Line
+	5100 5850 5100 5650
+Wire Wire Line
+	2750 5750 3150 5750
+Wire Wire Line
+	4900 5750 4900 5650
+Wire Wire Line
+	3250 4700 5100 4700
+Wire Wire Line
+	5100 4700 5100 4500
+Wire Wire Line
+	4900 4500 4900 4600
+Wire Wire Line
+	4900 3450 4900 3350
+Wire Wire Line
+	3250 3550 5100 3550
+Wire Wire Line
+	5100 3550 5100 3350
+Wire Wire Line
+	5100 2200 5100 2400
+Wire Wire Line
+	5100 2400 3250 2400
+Wire Wire Line
+	4900 2200 4900 2300
+Wire Wire Line
+	4900 2300 3350 2300
+Wire Wire Line
+	4900 4600 3350 4600
+Wire Wire Line
+	3350 3450 3350 4600
+Wire Wire Line
+	3350 3450 4900 3450
+Connection ~ 3350 4600
+Wire Wire Line
+	3250 3550 3250 4700
+Connection ~ 3250 4700
+Wire Wire Line
+	3350 2300 3350 3450
+Connection ~ 3350 3450
+Wire Wire Line
+	3250 2400 3250 3550
+Connection ~ 3250 3550
+Wire Wire Line
+	3150 5750 3150 5950
+Connection ~ 3150 5750
+Wire Wire Line
+	2850 5850 2850 5950
+Connection ~ 2850 5850
+Wire Wire Line
+	2850 6250 2850 6350
+Wire Wire Line
+	3150 6250 3150 6350
+Text HLabel 3150 6350 3    50   Input ~ 0
+GND
+Text HLabel 2850 6350 3    50   Input ~ 0
+GND
+Text HLabel 6650 2050 1    50   Input ~ 0
+VCC
+Wire Wire Line
+	6650 2050 6650 2150
+Wire Wire Line
+	6650 3050 6650 3150
+$Comp
+L Device:C C33
+U 1 1 63537A3B
+P 6150 2650
+F 0 "C33" H 6265 2696 50  0000 L CNN
+F 1 "0.1uF" H 6265 2605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6188 2500 50  0001 C CNN
+F 3 "~" H 6150 2650 50  0001 C CNN
+	1    6150 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 2500 6150 2150
+Wire Wire Line
+	6150 2150 6650 2150
+Connection ~ 6650 2150
+Wire Wire Line
+	6650 2150 6650 2250
+Wire Wire Line
+	6150 2800 6150 3150
+Wire Wire Line
+	6150 3150 6650 3150
+Connection ~ 6650 3150
+Wire Wire Line
+	6650 3150 6650 3250
+Text HLabel 8000 3250 3    50   Input ~ 0
+GND
+$Comp
+L ts5a3359:TS5A3359DCUR U15
+U 2 1 6353C14E
+P 8000 2650
+F 0 "U15" H 8130 2696 50  0000 L CNN
+F 1 "TS5A3359DCUR" H 8130 2605 50  0000 L CNN
+F 2 "Package_SO:VSSOP-8_2.3x2mm_P0.5mm" H 8000 1950 50  0001 C CNN
+F 3 "" H 7425 2875 50  0001 C CNN
+	2    8000 2650
+	1    0    0    -1  
+$EndComp
+Text HLabel 8000 2050 1    50   Input ~ 0
+VCC
+Wire Wire Line
+	8000 2050 8000 2150
+Wire Wire Line
+	8000 3050 8000 3150
+$Comp
+L Device:C C34
+U 1 1 6353C15B
+P 7500 2650
+F 0 "C34" H 7615 2696 50  0000 L CNN
+F 1 "0.1uF" H 7615 2605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7538 2500 50  0001 C CNN
+F 3 "~" H 7500 2650 50  0001 C CNN
+	1    7500 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 2500 7500 2150
+Wire Wire Line
+	7500 2150 8000 2150
+Connection ~ 8000 2150
+Wire Wire Line
+	8000 2150 8000 2250
+Wire Wire Line
+	7500 2800 7500 3150
+Wire Wire Line
+	7500 3150 8000 3150
+Connection ~ 8000 3150
+Wire Wire Line
+	8000 3150 8000 3250
+Text HLabel 6650 5000 3    50   Input ~ 0
+GND
+$Comp
+L ts5a3359:TS5A3359DCUR U13
+U 2 1 63540177
+P 6650 4400
+F 0 "U13" H 6780 4446 50  0000 L CNN
+F 1 "TS5A3359DCUR" H 6780 4355 50  0000 L CNN
+F 2 "Package_SO:VSSOP-8_2.3x2mm_P0.5mm" H 6650 3700 50  0001 C CNN
+F 3 "" H 6075 4625 50  0001 C CNN
+	2    6650 4400
+	1    0    0    -1  
+$EndComp
+Text HLabel 6650 3800 1    50   Input ~ 0
+VCC
+Wire Wire Line
+	6650 3800 6650 3900
+Wire Wire Line
+	6650 4800 6650 4900
+$Comp
+L Device:C C41
+U 1 1 63540184
+P 6150 4400
+F 0 "C41" H 6265 4446 50  0000 L CNN
+F 1 "0.1uF" H 6265 4355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6188 4250 50  0001 C CNN
+F 3 "~" H 6150 4400 50  0001 C CNN
+	1    6150 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4250 6150 3900
+Wire Wire Line
+	6150 3900 6650 3900
+Connection ~ 6650 3900
+Wire Wire Line
+	6650 3900 6650 4000
+Wire Wire Line
+	6150 4550 6150 4900
+Wire Wire Line
+	6150 4900 6650 4900
+Connection ~ 6650 4900
+Wire Wire Line
+	6650 4900 6650 5000
+Text HLabel 8000 5000 3    50   Input ~ 0
+GND
+$Comp
+L ts5a3359:TS5A3359DCUR U16
+U 2 1 63540197
+P 8000 4400
+F 0 "U16" H 8130 4446 50  0000 L CNN
+F 1 "TS5A3359DCUR" H 8130 4355 50  0000 L CNN
+F 2 "Package_SO:VSSOP-8_2.3x2mm_P0.5mm" H 8000 3700 50  0001 C CNN
+F 3 "" H 7425 4625 50  0001 C CNN
+	2    8000 4400
+	1    0    0    -1  
+$EndComp
+Text HLabel 8000 3800 1    50   Input ~ 0
+VCC
+Wire Wire Line
+	8000 3800 8000 3900
+Wire Wire Line
+	8000 4800 8000 4900
+$Comp
+L Device:C C42
+U 1 1 635401A4
+P 7500 4400
+F 0 "C42" H 7615 4446 50  0000 L CNN
+F 1 "0.1uF" H 7615 4355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7538 4250 50  0001 C CNN
+F 3 "~" H 7500 4400 50  0001 C CNN
+	1    7500 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 4250 7500 3900
+Wire Wire Line
+	7500 3900 8000 3900
+Connection ~ 8000 3900
+Wire Wire Line
+	8000 3900 8000 4000
+Wire Wire Line
+	7500 4550 7500 4900
+Wire Wire Line
+	7500 4900 8000 4900
+Connection ~ 8000 4900
+Wire Wire Line
+	8000 4900 8000 5000
+$Comp
+L Device:C_Small C32
+U 1 1 640F3C64
+P 4000 1950
+F 0 "C32" V 3771 1950 50  0000 C CNN
+F 1 "0.1uF" V 3862 1950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4000 1950 50  0001 C CNN
+F 3 "~" H 4000 1950 50  0001 C CNN
+	1    4000 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C30
+U 1 1 640F41DA
+P 4400 1650
+F 0 "C30" V 4171 1650 50  0000 C CNN
+F 1 "0.1uF" V 4262 1650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4400 1650 50  0001 C CNN
+F 3 "~" H 4400 1650 50  0001 C CNN
+	1    4400 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C31
+U 1 1 640F446C
+P 4200 1800
+F 0 "C31" V 3971 1800 50  0000 C CNN
+F 1 "0.1uF" V 4062 1800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4200 1800 50  0001 C CNN
+F 3 "~" H 4200 1800 50  0001 C CNN
+	1    4200 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3800 1950 3900 1950
+Wire Wire Line
+	3800 1800 4100 1800
+Wire Wire Line
+	3800 1650 4300 1650
+Text Notes 3550 6000 0    50   ~ 0
+Pull-down so default state is no input selected
+Text HLabel 3800 2800 0    50   Input ~ 0
+GREEN_1
+Text HLabel 3800 2950 0    50   Input ~ 0
+GREEN_2
+Text HLabel 3800 3100 0    50   Input ~ 0
+GREEN_3
+Wire Wire Line
+	3150 5750 3350 5750
+Wire Wire Line
+	3350 5750 4900 5750
+Wire Wire Line
+	3350 4600 3350 5750
+Wire Wire Line
+	2850 5850 3250 5850
+Wire Wire Line
+	3250 5850 5100 5850
+Wire Wire Line
+	3250 4700 3250 5850
+Connection ~ 3350 5750
+Connection ~ 3250 5850
+Wire Wire Line
+	4100 3100 4600 3100
+Wire Wire Line
+	4600 2950 4300 2950
+Wire Wire Line
+	4500 2800 4600 2800
+$Comp
+L Device:C_Small C37
+U 1 1 6415773D
+P 4000 3100
+F 0 "C37" V 3771 3100 50  0000 C CNN
+F 1 "0.1uF" V 3862 3100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4000 3100 50  0001 C CNN
+F 3 "~" H 4000 3100 50  0001 C CNN
+	1    4000 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C35
+U 1 1 64157747
+P 4400 2800
+F 0 "C35" V 4171 2800 50  0000 C CNN
+F 1 "0.1uF" V 4262 2800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4400 2800 50  0001 C CNN
+F 3 "~" H 4400 2800 50  0001 C CNN
+	1    4400 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C36
+U 1 1 64157751
+P 4200 2950
+F 0 "C36" V 3971 2950 50  0000 C CNN
+F 1 "0.1uF" V 4062 2950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4200 2950 50  0001 C CNN
+F 3 "~" H 4200 2950 50  0001 C CNN
+	1    4200 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3800 3100 3900 3100
+Wire Wire Line
+	3800 2950 4100 2950
+Wire Wire Line
+	3800 2800 4300 2800
+Wire Wire Line
+	4100 4250 4600 4250
+Wire Wire Line
+	4600 4100 4300 4100
+Wire Wire Line
+	4500 3950 4600 3950
+$Comp
+L Device:C_Small C40
+U 1 1 6415A5A0
+P 4000 4250
+F 0 "C40" V 3771 4250 50  0000 C CNN
+F 1 "0.1uF" V 3862 4250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4000 4250 50  0001 C CNN
+F 3 "~" H 4000 4250 50  0001 C CNN
+	1    4000 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C38
+U 1 1 6415A5AA
+P 4400 3950
+F 0 "C38" V 4171 3950 50  0000 C CNN
+F 1 "0.1uF" V 4262 3950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4400 3950 50  0001 C CNN
+F 3 "~" H 4400 3950 50  0001 C CNN
+	1    4400 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C39
+U 1 1 6415A5B4
+P 4200 4100
+F 0 "C39" V 3971 4100 50  0000 C CNN
+F 1 "0.1uF" V 4062 4100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4200 4100 50  0001 C CNN
+F 3 "~" H 4200 4100 50  0001 C CNN
+	1    4200 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3800 4250 3900 4250
+Wire Wire Line
+	3800 4100 4100 4100
+Wire Wire Line
+	3800 3950 4300 3950
+Wire Wire Line
+	4100 5400 4600 5400
+Wire Wire Line
+	4600 5250 4300 5250
+Wire Wire Line
+	4500 5100 4600 5100
+$Comp
+L Device:C_Small C45
+U 1 1 6415DC34
+P 4000 5400
+F 0 "C45" V 3771 5400 50  0000 C CNN
+F 1 "0.1uF" V 3862 5400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4000 5400 50  0001 C CNN
+F 3 "~" H 4000 5400 50  0001 C CNN
+	1    4000 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C43
+U 1 1 6415DC3E
+P 4400 5100
+F 0 "C43" V 4171 5100 50  0000 C CNN
+F 1 "0.1uF" V 4262 5100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4400 5100 50  0001 C CNN
+F 3 "~" H 4400 5100 50  0001 C CNN
+	1    4400 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C44
+U 1 1 6415DC48
+P 4200 5250
+F 0 "C44" V 3971 5250 50  0000 C CNN
+F 1 "0.1uF" V 4062 5250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4200 5250 50  0001 C CNN
+F 3 "~" H 4200 5250 50  0001 C CNN
+	1    4200 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3800 5400 3900 5400
+Wire Wire Line
+	3800 5250 4100 5250
+Wire Wire Line
+	3800 5100 4300 5100
+$EndSCHEMATC

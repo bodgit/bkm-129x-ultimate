@@ -1,0 +1,8 @@
+(fp_lib_table
+  (lib (name hd15-vga)(type KiCad)(uri ${KIPRJMOD}/hd15-vga.pretty)(options "")(descr ""))
+  (lib (name ninigi-scart-ra)(type KiCad)(uri ${KIPRJMOD}/ninigi-scart-ra.pretty)(options "")(descr ""))
+  (lib (name sj1-353xng)(type KiCad)(uri ${KIPRJMOD}/sj1-353xng.pretty)(options "")(descr ""))
+  (lib (name pbh)(type KiCad)(uri ${KIPRJMOD}/pbh.pretty)(options "")(descr ""))
+  (lib (name arduino-nano-v3)(type KiCad)(uri ${KIPRJMOD}/arduino-nano-v3.pretty)(options "")(descr ""))
+  (lib (name standard-pin-64p-ra)(type KiCad)(uri ${KIPRJMOD}/standard-pin-64p-ra.pretty)(options "")(descr ""))
+)

@@ -1,0 +1,746 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74LVC125 U8
+U 1 1 63934638
+P 2100 2400
+F 0 "U8" H 2100 2717 50  0000 C CNN
+F 1 "74LVC125" H 2100 2626 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2100 2400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LVC125" H 2100 2400 50  0001 C CNN
+	1    2100 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LVC125 U8
+U 2 1 63934D87
+P 2100 3200
+F 0 "U8" H 2100 3517 50  0000 C CNN
+F 1 "74LVC125" H 2100 3426 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2100 3200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LVC125" H 2100 3200 50  0001 C CNN
+	2    2100 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LVC125 U8
+U 3 1 639357BF
+P 2100 4000
+F 0 "U8" H 2100 4317 50  0000 C CNN
+F 1 "74LVC125" H 2100 4226 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2100 4000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LVC125" H 2100 4000 50  0001 C CNN
+	3    2100 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LVC125 U8
+U 4 1 63935FE0
+P 2100 4800
+F 0 "U8" H 2100 5117 50  0000 C CNN
+F 1 "74LVC125" H 2100 5026 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2100 4800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LVC125" H 2100 4800 50  0001 C CNN
+	4    2100 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LVC125 U8
+U 5 1 63936293
+P 3650 1450
+F 0 "U8" H 3880 1496 50  0000 L CNN
+F 1 "74LVC125" H 3880 1405 50  0000 L CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 3650 1450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LVC125" H 3650 1450 50  0001 C CNN
+	5    3650 1450
+	1    0    0    -1  
+$EndComp
+Text HLabel 3650 850  1    50   Input ~ 0
+VCC
+Text HLabel 3650 2050 3    50   Input ~ 0
+GND
+Wire Wire Line
+	3650 2050 3650 1950
+Wire Wire Line
+	3650 950  3650 850 
+Wire Wire Line
+	2100 5050 2100 5150
+Text HLabel 2100 5150 3    50   Input ~ 0
+GND
+Wire Wire Line
+	2100 4250 2100 4350
+Wire Wire Line
+	2100 4350 2500 4350
+Wire Wire Line
+	2500 4350 2500 4800
+Wire Wire Line
+	2500 4800 2400 4800
+Wire Wire Line
+	2500 4350 2500 3550
+Wire Wire Line
+	2500 3550 2100 3550
+Wire Wire Line
+	2100 3550 2100 3450
+Connection ~ 2500 4350
+Wire Wire Line
+	2100 2650 2100 2750
+Wire Wire Line
+	2100 2750 2500 2750
+Wire Wire Line
+	2500 2750 2500 3550
+Connection ~ 2500 3550
+Wire Wire Line
+	2400 3200 2600 3200
+Wire Wire Line
+	2600 3200 2600 3100
+Wire Wire Line
+	2600 3200 2700 3200
+Connection ~ 2600 3200
+Text Label 2700 3200 0    50   ~ 0
+MCU_MISO
+Wire Wire Line
+	1800 3200 1600 3200
+$Comp
+L Device:R_US R34
+U 1 1 6393920A
+P 1450 3200
+F 0 "R34" V 1245 3200 50  0000 C CNN
+F 1 "100R" V 1336 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1490 3190 50  0001 C CNN
+F 3 "~" H 1450 3200 50  0001 C CNN
+	1    1450 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 3200 1100 3200
+Text HLabel 1100 3200 0    50   Output ~ 0
+MISO
+Wire Wire Line
+	1800 2400 1600 2400
+$Comp
+L Device:R_US R32
+U 1 1 6393A69F
+P 1450 2400
+F 0 "R32" V 1245 2400 50  0000 C CNN
+F 1 "100R" V 1336 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1490 2390 50  0001 C CNN
+F 3 "~" H 1450 2400 50  0001 C CNN
+	1    1450 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 2400 1200 2400
+Wire Wire Line
+	1200 2400 1200 2300
+Wire Wire Line
+	1200 2400 1100 2400
+Connection ~ 1200 2400
+$Comp
+L Device:R_US R30
+U 1 1 6393B54C
+P 1200 2150
+F 0 "R30" H 1133 2104 50  0000 R CNN
+F 1 "100K" H 1133 2195 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1240 2140 50  0001 C CNN
+F 3 "~" H 1200 2150 50  0001 C CNN
+	1    1200 2150
+	1    0    0    1   
+$EndComp
+Text HLabel 1100 2400 0    50   Input ~ 0
+SCLK
+Wire Wire Line
+	1200 2000 1200 1900
+Text HLabel 1200 1900 1    50   Input ~ 0
+VCC
+Wire Wire Line
+	2400 2400 2600 2400
+$Comp
+L Device:R_US R33
+U 1 1 6393C9D1
+P 2600 2950
+F 0 "R33" H 2668 2996 50  0000 L CNN
+F 1 "4K7" H 2668 2905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2640 2940 50  0001 C CNN
+F 3 "~" H 2600 2950 50  0001 C CNN
+	1    2600 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2800 2600 2700
+Text HLabel 2600 2700 1    50   Input ~ 0
+VCC
+Text Label 2700 2400 0    50   ~ 0
+MCU_SCK
+Wire Wire Line
+	2400 4000 2700 4000
+Text Label 2700 4000 0    50   ~ 0
+MCU_MOSI
+Wire Wire Line
+	1800 4000 1600 4000
+$Comp
+L Device:R_US R36
+U 1 1 6393E0E1
+P 1450 4000
+F 0 "R36" V 1245 4000 50  0000 C CNN
+F 1 "100R" V 1336 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1490 3990 50  0001 C CNN
+F 3 "~" H 1450 4000 50  0001 C CNN
+	1    1450 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 4000 1200 4000
+Wire Wire Line
+	1200 4000 1200 3900
+$Comp
+L Device:R_US R35
+U 1 1 6393EC2F
+P 1200 3750
+F 0 "R35" H 1133 3704 50  0000 R CNN
+F 1 "100K" H 1133 3795 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1240 3740 50  0001 C CNN
+F 3 "~" H 1200 3750 50  0001 C CNN
+	1    1200 3750
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1200 3600 1200 3500
+Text HLabel 1200 3500 1    50   Input ~ 0
+VCC
+Wire Wire Line
+	1200 4000 1100 4000
+Connection ~ 1200 4000
+Text HLabel 1100 4000 0    50   Input ~ 0
+MOSI
+Wire Wire Line
+	2500 4800 2700 4800
+Connection ~ 2500 4800
+Text Label 2700 4800 0    50   ~ 0
+~MCU_SS
+Wire Wire Line
+	1800 4800 1700 4800
+$Comp
+L Device:R_US R38
+U 1 1 63941149
+P 1450 4800
+F 0 "R38" V 1245 4800 50  0000 C CNN
+F 1 "100R" V 1336 4800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1490 4790 50  0001 C CNN
+F 3 "~" H 1450 4800 50  0001 C CNN
+	1    1450 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 4800 1200 4800
+Wire Wire Line
+	1200 4800 1200 4700
+Wire Wire Line
+	1200 4800 1100 4800
+Connection ~ 1200 4800
+$Comp
+L Device:R_US R37
+U 1 1 639426A6
+P 1200 4550
+F 0 "R37" H 1133 4504 50  0000 R CNN
+F 1 "100K" H 1133 4595 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1240 4540 50  0001 C CNN
+F 3 "~" H 1200 4550 50  0001 C CNN
+	1    1200 4550
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1200 4400 1200 4300
+Text HLabel 1200 4300 1    50   Input ~ 0
+VCC
+Text HLabel 1100 4800 0    50   Input ~ 0
+SLOT_ID
+Text Label 1700 4900 3    50   ~ 0
+MCU_SLOT_ID
+Wire Wire Line
+	1700 4800 1700 4900
+Connection ~ 1700 4800
+Wire Wire Line
+	1700 4800 1600 4800
+$Comp
+L Device:R_US R31
+U 1 1 63955BFB
+P 2600 2150
+F 0 "R31" H 2668 2196 50  0000 L CNN
+F 1 "4K7" H 2668 2105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2640 2140 50  0001 C CNN
+F 3 "~" H 2600 2150 50  0001 C CNN
+	1    2600 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2300 2600 2400
+Connection ~ 2600 2400
+Wire Wire Line
+	2600 2400 2700 2400
+Wire Wire Line
+	2600 2000 2600 1900
+Text HLabel 2600 1900 1    50   Input ~ 0
+VCC
+$Comp
+L atmega:ATmega328PB-AU U10
+U 1 1 63962B52
+P 9400 3600
+F 0 "U10" H 9600 2100 50  0000 C CNN
+F 1 "ATmega328PB-AU" H 9900 2000 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 9400 3600 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001906C.pdf" H 9400 3600 50  0001 C CNN
+	1    9400 3600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8800 4100
+NoConn ~ 8800 4200
+NoConn ~ 8800 4300
+NoConn ~ 8800 4400
+Wire Wire Line
+	9400 5100 9400 5200
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J6
+U 1 1 639681C4
+P 9350 5950
+F 0 "J6" H 9400 6267 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 9400 6176 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 9350 5950 50  0001 C CNN
+F 3 "~" H 9350 5950 50  0001 C CNN
+	1    9350 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 6050 9750 6050
+Wire Wire Line
+	9750 6050 9750 6150
+Wire Wire Line
+	9650 5850 9750 5850
+Wire Wire Line
+	9750 5850 9750 5750
+Text HLabel 9750 5750 1    50   Input ~ 0
+VCC
+Text HLabel 9400 5200 3    50   Input ~ 0
+GND
+Text HLabel 9750 6150 3    50   Input ~ 0
+GND
+Wire Wire Line
+	9650 5950 9750 5950
+Text Label 9750 5950 0    50   ~ 0
+MCU_MOSI
+Wire Wire Line
+	9150 5950 9050 5950
+Wire Wire Line
+	9150 6050 9050 6050
+Wire Wire Line
+	9150 5850 9050 5850
+Text Label 9050 5950 2    50   ~ 0
+MCU_SCK
+Text Label 9050 5850 2    50   ~ 0
+MCU_MISO
+Wire Wire Line
+	10000 2900 10100 2900
+Text Label 10100 2900 0    50   ~ 0
+MCU_SCK
+Wire Wire Line
+	10000 2800 10100 2800
+Text Label 10100 2800 0    50   ~ 0
+MCU_MISO
+Wire Wire Line
+	10000 2700 10100 2700
+Text Label 10100 2700 0    50   ~ 0
+MCU_MOSI
+Wire Wire Line
+	10000 2600 10100 2600
+Text Label 10100 2600 0    50   ~ 0
+~MCU_SS
+NoConn ~ 10000 3400
+NoConn ~ 10000 3500
+NoConn ~ 10000 3600
+NoConn ~ 10000 3700
+NoConn ~ 10000 3800
+Wire Wire Line
+	10000 3900 10100 3900
+NoConn ~ 10000 4100
+NoConn ~ 10000 4200
+Wire Wire Line
+	10000 4300 10100 4300
+Wire Wire Line
+	10000 4700 10100 4700
+Wire Wire Line
+	10000 4800 10100 4800
+Text HLabel 10100 4700 2    50   Output ~ 0
+~BX_OE
+Text HLabel 10100 4800 2    50   Output ~ 0
+~EXT_SYNC_OE
+Text Label 10100 4300 0    50   ~ 0
+MCU_SLOT_ID
+$Comp
+L Device:Crystal_GND2_Small Y1
+U 1 1 6398855A
+P 10200 3050
+F 0 "Y1" V 10400 2500 50  0000 C CNN
+F 1 "Crystal_GND2" V 10300 2500 50  0000 C CNN
+F 2 "Crystal:Resonator_SMD_muRata_CSTxExxV-3Pin_3.0x1.1mm_HandSoldering" H 10200 3050 50  0001 C CNN
+F 3 "~" H 10200 3050 50  0001 C CNN
+	1    10200 3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10000 3000 10100 3000
+Wire Wire Line
+	10000 3100 10100 3100
+Wire Wire Line
+	10100 3100 10100 3150
+Wire Wire Line
+	10100 3150 10200 3150
+Wire Wire Line
+	10400 3050 10325 3050
+Text HLabel 10400 3050 2    50   Input ~ 0
+GND
+Wire Wire Line
+	8800 2400 8700 2400
+$Comp
+L Device:C_Small C25
+U 1 1 6398E6D6
+P 8600 2400
+F 0 "C25" V 8371 2400 50  0000 C CNN
+F 1 "0.1uF" V 8462 2400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8600 2400 50  0001 C CNN
+F 3 "~" H 8600 2400 50  0001 C CNN
+	1    8600 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8500 2400 8400 2400
+Wire Wire Line
+	8400 2400 8400 2500
+Text HLabel 8400 2500 3    50   Input ~ 0
+GND
+$Comp
+L dtc144eka:DTC144EKA Q3
+U 1 1 639A0D00
+P 4350 6650
+F 0 "Q3" H 4537 6696 50  0000 L CNN
+F 1 "DTC144EKA" H 4537 6605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SC-59_Handsoldering" H 4350 6650 50  0001 L CNN
+F 3 "" H 4350 6650 50  0001 L CNN
+	1    4350 6650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 6850 4250 6950
+Wire Wire Line
+	4250 6450 4250 6350
+Wire Wire Line
+	4250 6350 4150 6350
+Connection ~ 4250 6350
+Wire Wire Line
+	4250 6350 4250 6250
+$Comp
+L Device:R_US R39
+U 1 1 639A7D40
+P 4250 6100
+F 0 "R39" H 4318 6146 50  0000 L CNN
+F 1 "100K" H 4318 6055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4290 6090 50  0001 C CNN
+F 3 "~" H 4250 6100 50  0001 C CNN
+	1    4250 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 5950 4250 5850
+Text HLabel 4250 5850 1    50   Input ~ 0
+VCC
+Text Label 4150 6350 2    50   ~ 0
+~MCU_RESET
+Text Label 10100 3900 0    50   ~ 0
+~MCU_RESET
+Text Label 9050 6050 2    50   ~ 0
+~MCU_RESET
+Wire Wire Line
+	10000 4600 10100 4600
+Text HLabel 10100 4600 2    50   Input ~ 0
+VSYNC
+Wire Wire Line
+	9400 2100 9400 2000
+Wire Wire Line
+	9400 2000 9450 2000
+Wire Wire Line
+	9500 2000 9500 2100
+$Comp
+L Device:C_Small C24
+U 1 1 639B284E
+P 9650 1050
+F 0 "C24" H 9742 1096 50  0000 L CNN
+F 1 "1uF" H 9742 1005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9650 1050 50  0001 C CNN
+F 3 "~" H 9650 1050 50  0001 C CNN
+	1    9650 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C23
+U 1 1 639B2C6E
+P 9250 1050
+F 0 "C23" H 9342 1096 50  0000 L CNN
+F 1 "4.7uF" H 9342 1005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9250 1050 50  0001 C CNN
+F 3 "~" H 9250 1050 50  0001 C CNN
+	1    9250 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 2000 9450 1900
+Connection ~ 9450 2000
+Wire Wire Line
+	9450 2000 9500 2000
+Text HLabel 9450 1900 1    50   Input ~ 0
+VCC
+Wire Wire Line
+	9250 950  9250 850 
+Wire Wire Line
+	9250 850  9450 850 
+Wire Wire Line
+	9650 850  9650 950 
+Wire Wire Line
+	9250 1150 9250 1250
+Wire Wire Line
+	9250 1250 9450 1250
+Wire Wire Line
+	9650 1250 9650 1150
+Wire Wire Line
+	9450 1250 9450 1350
+Connection ~ 9450 1250
+Wire Wire Line
+	9450 1250 9650 1250
+Wire Wire Line
+	9450 850  9450 750 
+Connection ~ 9450 850 
+Wire Wire Line
+	9450 850  9650 850 
+Text HLabel 9450 750  1    50   Input ~ 0
+VCC
+Text HLabel 9450 1350 3    50   Input ~ 0
+GND
+$Comp
+L arduino-nano-v3:arduino-nano-v3 U9
+U 1 1 639DAFD9
+P 5800 3450
+F 0 "U9" H 5800 4787 60  0000 C CNN
+F 1 "arduino-nano-v3" H 5800 4681 60  0000 C CNN
+F 2 "arduino-nano-v3:arduino-nano-v3" H 5400 3800 60  0001 C CNN
+F 3 "" H 5400 3800 60  0001 C CNN
+	1    5800 3450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7200 2400
+NoConn ~ 7200 3000
+NoConn ~ 7200 3150
+NoConn ~ 7200 3300
+NoConn ~ 7200 3450
+NoConn ~ 7200 3600
+NoConn ~ 7200 3750
+NoConn ~ 7200 3900
+NoConn ~ 7200 4200
+NoConn ~ 7200 4350
+Wire Wire Line
+	7200 4500 7300 4500
+Text Label 7300 4500 0    50   ~ 0
+MCU_SCK
+Wire Wire Line
+	7200 2700 7300 2700
+Text Label 7300 2700 0    50   ~ 0
+~MCU_RESET
+Wire Wire Line
+	7200 2850 7300 2850
+Wire Wire Line
+	7200 2550 7300 2550
+Text HLabel 7300 2850 2    50   Input ~ 0
+VCC
+Text HLabel 7300 2550 2    50   Input ~ 0
+GND
+Wire Wire Line
+	4400 2850 4300 2850
+Text HLabel 4300 2850 0    50   Input ~ 0
+GND
+NoConn ~ 4400 2400
+NoConn ~ 4400 2550
+NoConn ~ 4400 2700
+Wire Wire Line
+	4400 3000 4300 3000
+Text Label 4300 3000 2    50   ~ 0
+MCU_SLOT_ID
+Wire Wire Line
+	4400 3450 4300 3450
+Text HLabel 4300 3450 0    50   Input ~ 0
+VSYNC
+Wire Wire Line
+	4400 3600 4300 3600
+Wire Wire Line
+	4400 3750 4300 3750
+Text HLabel 4300 3600 0    50   Output ~ 0
+~BX_OE
+Text HLabel 4300 3750 0    50   Output ~ 0
+~EXT_SYNC_OE
+Wire Wire Line
+	4400 4200 4300 4200
+Wire Wire Line
+	4400 4350 4300 4350
+Wire Wire Line
+	4400 4500 4300 4500
+Text Label 4300 4200 2    50   ~ 0
+~MCU_SS
+Text Label 4300 4350 2    50   ~ 0
+MCU_MOSI
+Text Label 4300 4500 2    50   ~ 0
+MCU_MISO
+Text HLabel 4250 6950 3    50   Input ~ 0
+GND
+Wire Wire Line
+	4600 6650 4700 6650
+Text HLabel 4700 6650 2    50   Input ~ 0
+RESET
+Text HLabel 10100 2400 2    50   Output ~ 0
+IN1
+Text HLabel 10100 2500 2    50   Output ~ 0
+IN2
+Text HLabel 4300 3900 0    50   Output ~ 0
+IN1
+Text HLabel 4300 4050 0    50   Output ~ 0
+IN2
+Text Label 10100 4400 0    50   ~ 0
+SELECT
+Text Label 4300 3150 2    50   ~ 0
+SELECT
+Wire Wire Line
+	4400 3150 4300 3150
+Wire Wire Line
+	4400 3900 4300 3900
+Wire Wire Line
+	4400 4050 4300 4050
+Wire Wire Line
+	10000 4400 10100 4400
+Wire Wire Line
+	10000 2400 10100 2400
+Wire Wire Line
+	10100 2500 10000 2500
+$Comp
+L Jumper:Jumper_2_Open JP2
+U 1 1 6335B4A1
+P 6200 6650
+F 0 "JP2" H 6200 6885 50  0000 C CNN
+F 1 "Jumper_2_Open" H 6200 6794 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6200 6650 50  0001 C CNN
+F 3 "~" H 6200 6650 50  0001 C CNN
+	1    6200 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 6650 5900 6650
+Text Label 5800 6650 2    50   ~ 0
+SCAN_DISABLE
+Wire Wire Line
+	5900 6650 5900 6750
+Connection ~ 5900 6650
+Wire Wire Line
+	5900 6650 5800 6650
+$Comp
+L Device:R_US R41
+U 1 1 6336D446
+P 5900 6900
+F 0 "R41" H 5833 6854 50  0000 R CNN
+F 1 "10K" H 5833 6945 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5940 6890 50  0001 C CNN
+F 3 "~" H 5900 6900 50  0001 C CNN
+	1    5900 6900
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5900 7150 5900 7050
+Text HLabel 6500 6550 1    50   Input ~ 0
+VCC
+Wire Wire Line
+	6400 6650 6500 6650
+Wire Wire Line
+	6500 6650 6500 6550
+Text HLabel 5900 7150 3    50   Input ~ 0
+GND
+Wire Wire Line
+	4400 3300 4300 3300
+Text Label 7300 4050 0    50   ~ 0
+SCAN_DISABLE
+Wire Wire Line
+	10000 4500 10100 4500
+Text Label 10100 3300 0    50   ~ 0
+SCAN_DISABLE
+$Comp
+L pbsw:PBSW_DPDT SW2
+U 1 1 6340493D
+P 2000 6650
+F 0 "SW2" V 1448 6650 60  0000 C CNN
+F 1 "PBSW_DPDT" V 1554 6650 60  0000 C CNN
+F 2 "pbh:PBH2U" H 2195 6650 60  0001 C CNN
+F 3 "" H 2195 6650 60  0001 C CNN
+	1    2000 6650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 6550 1550 6550
+Wire Wire Line
+	1550 6550 1550 6450
+Text HLabel 1550 6450 1    50   Input ~ 0
+VCC
+NoConn ~ 1650 6350
+NoConn ~ 1650 6750
+NoConn ~ 1650 6950
+NoConn ~ 2350 6850
+Wire Wire Line
+	2350 6450 2450 6450
+Wire Wire Line
+	2450 6450 2450 6550
+Wire Wire Line
+	2450 6450 2550 6450
+Connection ~ 2450 6450
+$Comp
+L Device:R_US R40
+U 1 1 63437D02
+P 2450 6700
+F 0 "R40" H 2518 6746 50  0000 L CNN
+F 1 "10K" H 2518 6655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2490 6690 50  0001 C CNN
+F 3 "~" H 2450 6700 50  0001 C CNN
+	1    2450 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 6850 2450 6950
+Text HLabel 2450 6950 3    50   Input ~ 0
+GND
+Text Label 2550 6450 0    50   ~ 0
+SELECT
+Text HLabel 4300 3300 0    50   Output ~ 0
+SOG_EN
+Wire Wire Line
+	7200 4050 7300 4050
+Wire Wire Line
+	10000 3300 10100 3300
+Wire Wire Line
+	10100 3000 10100 2950
+Wire Wire Line
+	10100 2950 10200 2950
+Text HLabel 10100 4500 2    50   Output ~ 0
+SOG_EN
+$EndSCHEMATC

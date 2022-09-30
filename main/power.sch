@@ -1,0 +1,162 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ld1117s50tr:LD1117S50TR_SOT223 U11
+U 1 1 63616123
+P 6800 3500
+F 0 "U11" H 6800 3742 50  0000 C CNN
+F 1 "LDL1117S50R" H 6800 3651 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 6800 3700 50  0001 C CNN
+F 3 "" H 6900 3250 50  0001 C CNN
+	1    6800 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3800 6800 4000
+Wire Wire Line
+	7200 4000 6800 4000
+Wire Wire Line
+	6800 4000 6800 4100
+Connection ~ 6800 4000
+Wire Wire Line
+	6400 4000 6800 4000
+Wire Wire Line
+	6300 3500 6400 3500
+Wire Wire Line
+	7100 3500 7200 3500
+$Comp
+L Device:C C29
+U 1 1 63632E2D
+P 7200 3750
+F 0 "C29" H 7315 3796 50  0000 L CNN
+F 1 "4.7uF" H 7315 3705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7238 3600 50  0001 C CNN
+F 3 "~" H 7200 3750 50  0001 C CNN
+	1    7200 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 3900 7200 4000
+Wire Wire Line
+	7200 3600 7200 3500
+Connection ~ 7200 3500
+Wire Wire Line
+	7200 3500 7300 3500
+$Comp
+L Device:C C28
+U 1 1 63633D0B
+P 6400 3750
+F 0 "C28" H 6285 3704 50  0000 R CNN
+F 1 "1uF" H 6285 3795 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6438 3600 50  0001 C CNN
+F 3 "~" H 6400 3750 50  0001 C CNN
+	1    6400 3750
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6400 3600 6400 3500
+Connection ~ 6400 3500
+Wire Wire Line
+	6400 3500 6500 3500
+Wire Wire Line
+	6400 3900 6400 4000
+Text HLabel 6800 4100 3    50   Input ~ 0
+GND
+Text HLabel 6300 3500 0    50   Input ~ 0
+VIN
+Text HLabel 7300 3500 2    50   Output ~ 0
+VOUT
+$Comp
+L mic3490:MIC3490 U12
+U 1 1 63636DF2
+P 4950 3650
+F 0 "U12" H 4950 4047 60  0000 C CNN
+F 1 "MIC3490-5.0" H 4950 3941 60  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 4750 3650 60  0001 C CNN
+F 3 "" H 4750 3650 60  0001 C CNN
+	1    4950 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3800 5500 3800
+Wire Wire Line
+	5500 3800 5500 3150
+Wire Wire Line
+	5500 3150 4200 3150
+Wire Wire Line
+	4200 3150 4200 3500
+Wire Wire Line
+	4200 3500 4100 3500
+Text HLabel 4100 3500 0    50   Input ~ 0
+VIN
+Wire Wire Line
+	5400 3500 5600 3500
+Wire Wire Line
+	5600 3500 5600 3600
+Wire Wire Line
+	5600 3500 5700 3500
+Connection ~ 5600 3500
+Text HLabel 5700 3500 2    50   Output ~ 0
+VOUT
+$Comp
+L Device:C C27
+U 1 1 6363B016
+P 5600 3750
+F 0 "C27" H 5715 3796 50  0000 L CNN
+F 1 "2.2uF" H 5715 3705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5638 3600 50  0001 C CNN
+F 3 "~" H 5600 3750 50  0001 C CNN
+	1    5600 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3900 5600 4000
+Wire Wire Line
+	5600 4000 4400 4000
+Wire Wire Line
+	4500 3650 4400 3650
+Wire Wire Line
+	4400 3650 4400 4000
+Connection ~ 4400 4000
+Wire Wire Line
+	4400 4000 4400 4100
+Text HLabel 4400 4100 3    50   Input ~ 0
+GND
+$Comp
+L Device:C C26
+U 1 1 6363D5B6
+P 4200 3750
+F 0 "C26" H 4085 3704 50  0000 R CNN
+F 1 "1uF" H 4085 3795 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4238 3600 50  0001 C CNN
+F 3 "~" H 4200 3750 50  0001 C CNN
+	1    4200 3750
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4200 3500 4200 3600
+Connection ~ 4200 3500
+Wire Wire Line
+	4200 3900 4200 4000
+Wire Wire Line
+	4200 4000 4400 4000
+Wire Wire Line
+	4500 3800 4300 3800
+Wire Wire Line
+	4300 3800 4300 3500
+Wire Wire Line
+	4300 3500 4200 3500
+$EndSCHEMATC

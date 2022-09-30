@@ -1,0 +1,393 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_Coaxial J1
+U 1 1 63910A4C
+P 4450 1500
+F 0 "J1" H 4378 1738 50  0000 C CNN
+F 1 "YG_IN" H 4378 1647 50  0000 C CNN
+F 2 "bnc-tht:BNC-THT" H 4450 1500 50  0001 C CNN
+F 3 " ~" H 4450 1500 50  0001 C CNN
+	1    4450 1500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J2
+U 1 1 63912873
+P 4450 2100
+F 0 "J2" H 4378 2338 50  0000 C CNN
+F 1 "YG_OUT" H 4378 2247 50  0000 C CNN
+F 2 "bnc-tht:BNC-THT" H 4450 2100 50  0001 C CNN
+F 3 " ~" H 4450 2100 50  0001 C CNN
+	1    4450 2100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 1700 4450 1800
+Wire Wire Line
+	4450 1800 4750 1800
+Wire Wire Line
+	4450 2300 4450 2400
+Wire Wire Line
+	4450 2400 4750 2400
+$Comp
+L Connector:Conn_Coaxial J3
+U 1 1 6391360D
+P 4450 2700
+F 0 "J3" H 4378 2938 50  0000 C CNN
+F 1 "PBB_IN" H 4378 2847 50  0000 C CNN
+F 2 "bnc-tht:BNC-THT" H 4450 2700 50  0001 C CNN
+F 3 " ~" H 4450 2700 50  0001 C CNN
+	1    4450 2700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2900 4450 3000
+Wire Wire Line
+	4450 3000 4750 3000
+Wire Wire Line
+	4750 1800 4750 2400
+Connection ~ 4750 2400
+Wire Wire Line
+	4750 2400 4750 3000
+$Comp
+L Connector:Conn_Coaxial J4
+U 1 1 63914616
+P 4450 3300
+F 0 "J4" H 4378 3538 50  0000 C CNN
+F 1 "PBB_OUT" H 4378 3447 50  0000 C CNN
+F 2 "bnc-tht:BNC-THT" H 4450 3300 50  0001 C CNN
+F 3 " ~" H 4450 3300 50  0001 C CNN
+	1    4450 3300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3500 4450 3600
+Wire Wire Line
+	4450 3600 4750 3600
+$Comp
+L Connector:Conn_Coaxial J5
+U 1 1 63914E55
+P 4450 3900
+F 0 "J5" H 4378 4138 50  0000 C CNN
+F 1 "PRR_IN" H 4378 4047 50  0000 C CNN
+F 2 "bnc-tht:BNC-THT" H 4450 3900 50  0001 C CNN
+F 3 " ~" H 4450 3900 50  0001 C CNN
+	1    4450 3900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4100 4450 4200
+Wire Wire Line
+	4450 4200 4750 4200
+$Comp
+L Connector:Conn_Coaxial J6
+U 1 1 6391549A
+P 4450 4500
+F 0 "J6" H 4378 4738 50  0000 C CNN
+F 1 "PRR_OUT" H 4378 4647 50  0000 C CNN
+F 2 "bnc-tht:BNC-THT" H 4450 4500 50  0001 C CNN
+F 3 " ~" H 4450 4500 50  0001 C CNN
+	1    4450 4500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4700 4450 4800
+Wire Wire Line
+	4450 4800 4750 4800
+$Comp
+L Connector:Conn_Coaxial J7
+U 1 1 63915B7C
+P 4450 5100
+F 0 "J7" H 4378 5338 50  0000 C CNN
+F 1 "SYNC_IN" H 4378 5247 50  0000 C CNN
+F 2 "bnc-tht:BNC-THT" H 4450 5100 50  0001 C CNN
+F 3 " ~" H 4450 5100 50  0001 C CNN
+	1    4450 5100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 5300 4450 5400
+Wire Wire Line
+	4450 5400 4750 5400
+$Comp
+L Connector:Conn_Coaxial J8
+U 1 1 6391629F
+P 4450 5700
+F 0 "J8" H 4378 5938 50  0000 C CNN
+F 1 "SYNC_OUT" H 4378 5847 50  0000 C CNN
+F 2 "bnc-tht:BNC-THT" H 4450 5700 50  0001 C CNN
+F 3 " ~" H 4450 5700 50  0001 C CNN
+	1    4450 5700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 5900 4450 6000
+Wire Wire Line
+	4450 6000 4750 6000
+Wire Wire Line
+	4750 6000 4750 5400
+Connection ~ 4750 3000
+Connection ~ 4750 3600
+Wire Wire Line
+	4750 3600 4750 3000
+Connection ~ 4750 4200
+Wire Wire Line
+	4750 4200 4750 3600
+Connection ~ 4750 4800
+Wire Wire Line
+	4750 4800 4750 4200
+Connection ~ 4750 5400
+Wire Wire Line
+	4750 5400 4750 4800
+Wire Wire Line
+	4650 5700 4850 5700
+Wire Wire Line
+	4850 5700 4850 5600
+$Comp
+L Switch:SW_SPDT SW4
+U 1 1 63917AA9
+P 4950 5400
+F 0 "SW4" V 4904 5548 50  0000 L CNN
+F 1 "SW_SYNC_TERM" V 4995 5548 50  0000 L CNN
+F 2 "js202011scqn:js202011scqn" H 4950 5400 50  0001 C CNN
+F 3 "~" H 4950 5400 50  0001 C CNN
+	1    4950 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 5600 5050 5700
+Wire Wire Line
+	4950 5200 4950 5100
+Wire Wire Line
+	4950 5100 4650 5100
+Wire Wire Line
+	4950 5100 6050 5100
+Connection ~ 4950 5100
+Wire Wire Line
+	4650 4500 5150 4500
+Wire Wire Line
+	5150 4500 5150 4400
+$Comp
+L Switch:SW_SPDT SW3
+U 1 1 63919905
+P 5250 4200
+F 0 "SW3" V 5204 4348 50  0000 L CNN
+F 1 "SW_PRR_TERM" V 5295 4348 50  0000 L CNN
+F 2 "js202011scqn:js202011scqn" H 5250 4200 50  0001 C CNN
+F 3 "~" H 5250 4200 50  0001 C CNN
+	1    5250 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 3900 5250 3900
+Wire Wire Line
+	5250 3900 5250 4000
+Wire Wire Line
+	5250 3900 6250 3900
+Connection ~ 5250 3900
+$Comp
+L Device:R_US R4
+U 1 1 6391B504
+P 5050 5850
+F 0 "R4" H 5118 5896 50  0000 L CNN
+F 1 "75R" H 5118 5805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5090 5840 50  0001 C CNN
+F 3 "~" H 5050 5850 50  0001 C CNN
+	1    5050 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 6391BE15
+P 5350 5850
+F 0 "R3" H 5418 5896 50  0000 L CNN
+F 1 "75R" H 5418 5805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5390 5840 50  0001 C CNN
+F 3 "~" H 5350 5850 50  0001 C CNN
+	1    5350 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 6391C6BB
+P 5650 5850
+F 0 "R2" H 5718 5896 50  0000 L CNN
+F 1 "75R" H 5718 5805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5690 5840 50  0001 C CNN
+F 3 "~" H 5650 5850 50  0001 C CNN
+	1    5650 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 6391CC98
+P 5950 5850
+F 0 "R1" H 6018 5896 50  0000 L CNN
+F 1 "75R" H 6018 5805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5990 5840 50  0001 C CNN
+F 3 "~" H 5950 5850 50  0001 C CNN
+	1    5950 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 4400 5350 5700
+$Comp
+L Switch:SW_SPDT SW2
+U 1 1 6391DDCC
+P 5250 3000
+F 0 "SW2" V 5204 3148 50  0000 L CNN
+F 1 "SW_PBB_TERM" V 5295 3148 50  0000 L CNN
+F 2 "js202011scqn:js202011scqn" H 5250 3000 50  0001 C CNN
+F 3 "~" H 5250 3000 50  0001 C CNN
+	1    5250 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 3300 5150 3300
+Wire Wire Line
+	5150 3300 5150 3200
+Wire Wire Line
+	5350 3200 5350 3300
+Wire Wire Line
+	5350 3300 5650 3300
+Wire Wire Line
+	5650 3300 5650 5700
+Wire Wire Line
+	4650 2700 5250 2700
+Wire Wire Line
+	5250 2700 5250 2800
+Wire Wire Line
+	5250 2700 6050 2700
+Connection ~ 5250 2700
+$Comp
+L Switch:SW_SPDT SW1
+U 1 1 63927976
+P 5250 1800
+F 0 "SW1" V 5204 1948 50  0000 L CNN
+F 1 "SW_YG_TERM" V 5295 1948 50  0000 L CNN
+F 2 "js202011scqn:js202011scqn" H 5250 1800 50  0001 C CNN
+F 3 "~" H 5250 1800 50  0001 C CNN
+	1    5250 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 1500 5250 1500
+Wire Wire Line
+	5250 1500 5250 1600
+Wire Wire Line
+	5150 2000 5150 2100
+Wire Wire Line
+	5150 2100 4650 2100
+Wire Wire Line
+	5350 2000 5350 2100
+Wire Wire Line
+	5350 2100 5950 2100
+Wire Wire Line
+	5950 2100 5950 5700
+Connection ~ 5250 1500
+Wire Wire Line
+	5050 6000 5050 6100
+Wire Wire Line
+	5050 6100 4750 6100
+Wire Wire Line
+	4750 6100 4750 6000
+Connection ~ 4750 6000
+Wire Wire Line
+	5050 6100 5350 6100
+Wire Wire Line
+	5350 6100 5350 6000
+Connection ~ 5050 6100
+Wire Wire Line
+	5350 6100 5650 6100
+Wire Wire Line
+	5650 6100 5650 6000
+Connection ~ 5350 6100
+Wire Wire Line
+	5650 6100 5950 6100
+Wire Wire Line
+	5950 6100 5950 6000
+Connection ~ 5650 6100
+Wire Wire Line
+	5950 6100 5950 6200
+Connection ~ 5950 6100
+Wire Wire Line
+	6050 5100 6050 4000
+Wire Wire Line
+	6050 4000 6250 4000
+Wire Wire Line
+	5950 6100 6150 6100
+Wire Wire Line
+	6150 6100 6150 4100
+Wire Wire Line
+	6150 4100 6250 4100
+Wire Wire Line
+	6050 2700 6050 3800
+Wire Wire Line
+	6050 3800 6250 3800
+Wire Wire Line
+	6150 1500 6150 3700
+Wire Wire Line
+	6150 3700 6250 3700
+Wire Wire Line
+	5250 1500 6150 1500
+$Comp
+L power:GNDA #PWR0101
+U 1 1 6393A010
+P 5950 6200
+F 0 "#PWR0101" H 5950 5950 50  0001 C CNN
+F 1 "GNDA" H 5955 6027 50  0000 C CNN
+F 2 "" H 5950 6200 50  0001 C CNN
+F 3 "" H 5950 6200 50  0001 C CNN
+	1    5950 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J9
+U 1 1 6393A5B5
+P 6450 3900
+F 0 "J9" H 6530 3942 50  0000 L CNN
+F 1 "Conn_01x05" H 6530 3851 50  0000 L CNN
+F 2 "Connector_JST_NH:JST_NH_BS5P-SHF-1AA_1x05_P2.50mm_Horizontal" H 6450 3900 50  0001 C CNN
+F 3 "~" H 6450 3900 50  0001 C CNN
+	1    6450 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 6394A66C
+P 7300 3850
+F 0 "#FLG0101" H 7300 3925 50  0001 C CNN
+F 1 "PWR_FLAG" H 7300 4023 50  0000 C CNN
+F 2 "" H 7300 3850 50  0001 C CNN
+F 3 "~" H 7300 3850 50  0001 C CNN
+	1    7300 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3950 7300 3850
+$Comp
+L power:GNDA #PWR0102
+U 1 1 63948B6B
+P 7300 3950
+F 0 "#PWR0102" H 7300 3700 50  0001 C CNN
+F 1 "GNDA" H 7305 3777 50  0000 C CNN
+F 2 "" H 7300 3950 50  0001 C CNN
+F 3 "" H 7300 3950 50  0001 C CNN
+	1    7300 3950
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
