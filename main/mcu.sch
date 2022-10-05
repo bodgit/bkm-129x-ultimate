@@ -393,7 +393,7 @@ U 1 1 6398855A
 P 10200 3050
 F 0 "Y1" V 10400 2500 50  0000 C CNN
 F 1 "Crystal_GND2" V 10300 2500 50  0000 C CNN
-F 2 "Crystal:Resonator_SMD_muRata_CSTxExxV-3Pin_3.0x1.1mm_HandSoldering" H 10200 3050 50  0001 C CNN
+F 2 "Crystal:Resonator_SMD_muRata_CSTxExxV-3Pin_3.0x1.1mm" H 10200 3050 50  0001 C CNN
 F 3 "~" H 10200 3050 50  0001 C CNN
 	1    10200 3050
 	0    -1   -1   0   
