@@ -1,0 +1,43 @@
+---
+name: build
+on:
+  push:
+    tags:
+      - v*
+    branches:
+      - main
+      - master
+  pull_request:
+permissions:
+  contents: write
+  pull-requests: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Build main PCB
+        uses: INTI-CMNB/KiBot@v2
+        with:
+          config: main/config.kibot.yaml
+          dir: main/output
+          schema: main/main.sch
+          board: main/main.kicad_pcb
+      - name: Build sub PCB
+        uses: INTI-CMNB/KiBot@v2
+        with:
+          config: sub/config.kibot.yaml
+          dir: sub/output
+          schema: sub/sub.sch
+          board: sub/sub.kicad_pcb
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: Files
+          path: |
+            main/output/main-bom.csv
+            main/output/main-jlcpcb.zip
+            sub/output/sub-bom.csv
+            sub/output/sub-jlcpcb.zip
+          if-no-files-found: warn

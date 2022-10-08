@@ -2,3 +2,7 @@
 *.bck
 *.dcm
 .DS_Store
+*-drc.txt
+*-erc.txt
+main/output
+sub/output

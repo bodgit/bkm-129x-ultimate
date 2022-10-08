@@ -1,0 +1,96 @@
+---
+kibot:
+  version: 1
+
+global:
+  filters:
+  - number: 8
+  - number: 10
+  - number: 42
+  - number: 58
+
+preflight:
+  run_erc: true
+  run_drc: true
+
+outputs:
+- name: generic_bom_csv
+  comment: Generic Bill of Materials in CSV format
+  type: bom
+  dir: output
+  options:
+    columns:
+      - field: Quantity Per PCB
+        name: Quantity
+      - field: References
+      - field: Value
+      - field: Footprint
+    format: CSV
+    csv:
+      hide_pcb_info: true
+      hide_stats_info: true
+- name: jlcpcb_gerbers
+  comment: Gerbers compatible with JLCPCB
+  type: gerber
+  dir: output/jlcpcb
+  options:
+    exclude_edge_layer: true
+    exclude_pads_from_silkscreen: true
+    plot_sheet_reference: false
+    plot_footprint_refs: true
+    plot_footprint_values: false
+    force_plot_invisible_refs_vals: false
+    tent_vias: true
+    use_protel_extensions: true
+    create_gerber_job_file: false
+    disable_aperture_macros: true
+    gerber_precision: 4.6
+    use_gerber_x2_attributes: false
+    use_gerber_net_attributes: false
+    line_width: 0.1
+    subtract_mask_from_silk: true
+    inner_extension_pattern: .gp%n
+  layers:
+  - layer: F.Cu
+    suffix: F_Cu
+    description: Front copper
+  - layer: B.Cu
+    suffix: B_Cu
+    description: Bottom copper
+  - layer: F.Paste
+    suffix: F_Paste
+    description: Front solder paste
+  - layer: F.SilkS
+    suffix: F_SilkS
+    description: Front silkscreen (artwork)
+  - layer: B.Mask
+    suffix: B_Mask
+    description: Bottom soldermask (negative)
+  - layer: F.Mask
+    suffix: F_Mask
+    description: Front soldermask (negative)
+  - layer: Edge.Cuts
+    suffix: Edge_Cuts
+    description: Board shape
+- name: jlcpcb_drill
+  comment: Drill files compatible with JLCPCB
+  type: excellon
+  dir: output/jlcpcb
+  options:
+    pth_and_npth_single_file: false
+    pth_id: -PTH
+    npth_id: -NPTH
+    metric_units: true
+    map: gerber
+    route_mode_for_oval_holes: false
+    output: '%f%i.%x'
+- name: jlcpcb
+  comment: ZIP file for JLCPCB
+  type: compress
+  dir: output
+  options:
+    files:
+    - from_output: jlcpcb_gerbers
+      dest: /
+    - from_output: jlcpcb_drill
+      dest: /

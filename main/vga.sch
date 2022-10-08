@@ -20,7 +20,7 @@ P 5050 3450
 F 0 "J5" H 5050 4317 50  0000 C CNN
 F 1 "DB15_Female_HighDensity_MountingHoles" H 5050 4226 50  0000 C CNN
 F 2 "hd15-vga:HD15-VGA" H 4100 3850 50  0001 C CNN
-F 3 " ~" H 4100 3850 50  0001 C CNN
+F 3 "~" H 4100 3850 50  0001 C CNN
 	1    5050 3450
 	1    0    0    -1  
 $EndComp
