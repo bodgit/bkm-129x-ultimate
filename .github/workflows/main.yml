@@ -21,14 +21,14 @@ jobs:
         uses: INTI-CMNB/KiBot@v2
         with:
           config: main/config.kibot.yaml
-          dir: main/output
+          dir: main
           schema: main/main.sch
           board: main/main.kicad_pcb
       - name: Build sub PCB
         uses: INTI-CMNB/KiBot@v2
         with:
           config: sub/config.kibot.yaml
-          dir: sub/output
+          dir: sub
           schema: sub/sub.sch
           board: sub/sub.kicad_pcb
       - name: Upload artifacts
