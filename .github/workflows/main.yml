@@ -41,3 +41,13 @@ jobs:
             sub/output/sub-bom.csv
             sub/output/sub-jlcpcb.zip
           if-no-files-found: warn
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          fail_on_unmatched_files: true
+          files: |
+            main/output/main-bom.csv
+            main/output/main-jlcpcb.zip
+            sub/output/sub-bom.csv
+            sub/output/sub-jlcpcb.zip
