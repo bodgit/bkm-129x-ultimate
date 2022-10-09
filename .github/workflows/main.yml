@@ -31,6 +31,17 @@ jobs:
           dir: sub
           schema: sub/sub.sch
           board: sub/sub.kicad_pcb
+      - name: Install Arduino CLI
+        uses: arduino/setup-arduino-cli@v1
+      - name: Install platform
+        run: |
+          arduino-cli core update-index
+          arduino-cli core install arduino:avr@1.8.5
+      - name: Install libraries
+        run: |
+          arduino-cli lib update-index
+          arduino-cli lib install digitalWriteFast@1.1.0
+          arduino-cli lib install FreqCount@1.3.0
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
