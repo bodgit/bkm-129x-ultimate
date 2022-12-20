@@ -32,7 +32,7 @@ jobs:
           schema: sub/sub.sch
           board: sub/sub.kicad_pcb
       - name: Build STL file
-        uses: flat35hd99/openscad-actions@v1.3
+        uses: flat35hd99/openscad-actions@v1.4
         with:
           scad_file: bracket/bracket.scad
           output_file: bracket/bracket.stl
